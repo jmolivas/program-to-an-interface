@@ -6,11 +6,17 @@ use JMOlivas\Demo\Formatter\XmlFormatter;
 
 class Logger
 {
+
+    private $formatter;
+
+    public function setFormatter(XmlFormatter $formatter)
+    {
+        $this->formatter = $formatter;
+    }
+
     public function log($message, $level = 'error')
     {
-        $formatter = new XmlFormatter();
-
-        $log = $formatter->format($message, $level);
+        $log = $this->formatter->format($message, $level);
         $this->writeLog($log);
     }
 
