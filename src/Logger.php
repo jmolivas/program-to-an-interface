@@ -3,13 +3,19 @@
 namespace JMOlivas\Demo;
 
 use JMOlivas\Demo\Formatter\XmlFormatter;
+use JMOlivas\Demo\Formatter\JsonFormatter;
 
 class Logger
 {
 
     private $formatter;
 
-    public function setFormatter(XmlFormatter $formatter)
+    public function setXmlFormatter(XmlFormatter $formatter)
+    {
+        $this->formatter = $formatter;
+    }
+
+    public function setJsonFormatter(JsonFormatter $formatter)
     {
         $this->formatter = $formatter;
     }
