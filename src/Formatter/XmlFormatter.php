@@ -2,7 +2,7 @@
 
 namespace JMOlivas\Demo\Formatter;
 
-class XmlFormatter
+class XmlFormatter implements FormatterInterface
 {
     public function format($message, $level)
     {

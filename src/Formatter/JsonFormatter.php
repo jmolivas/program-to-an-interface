@@ -2,7 +2,7 @@
 
 namespace JMOlivas\Demo\Formatter;
 
-class JsonFormatter
+class JsonFormatter implements FormatterInterface
 {
     public function format($message, $level)
     {
