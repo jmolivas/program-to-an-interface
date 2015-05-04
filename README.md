@@ -3,4 +3,6 @@
 * Usage:
 ```
 $ composer dump-autoload
+
+$ php example.php
 ```
